@@ -21,14 +21,14 @@ body {
 .navBar {
   overflow: hidden;
   background-color: aliceblue;
-  
+
   border-bottom: 1px solid #2b2d66;
 }
 
 /* Navigation links */
 .navBar a {
   float: left;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Vidaloka", serif;
   color: #2b2d66;
   text-align: center;
@@ -44,7 +44,7 @@ body {
 
 /* Subnav button */
 .subNav .subNavBtn {
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
   outline: none;
   color: #2b2d66;
@@ -97,6 +97,45 @@ body {
 .pageTitle {
   font-family: "Vidaloka", serif;
   font-size: 2.2rem;
-  color:#ffb509;
+  color: #ffb509;
   text-align: center;
+}
+
+/* Recipe cards */
+
+.recipecard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px 50px 20px 50px;
+}
+
+.recipecard:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+
+.recipeimg {
+  width: 30%;
+  height: 180px;
+  flex: 1;
+  padding: 10px;
+  object-fit: cover;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recipecolumn {
+  flex: 2;
+  padding: 10px;
+}
+
+
+.postTitle {
+  font-family: "Vidaloka", serif;
+  font-weight:lighter;
+  font-size: 1.2rem;
 }
