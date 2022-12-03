@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap");
+
 body {
   padding: 0;
   margin: 0;
@@ -112,6 +114,7 @@ body {
 
 .recipecard:nth-child(2n) {
   flex-direction: row-reverse;
+  text-align: right;
 }
 
 .recipeimg {
@@ -133,9 +136,68 @@ img {
   padding: 10px;
 }
 
-
 .postTitle {
   font-family: "Vidaloka", serif;
-  font-weight:lighter;
+  font-weight: lighter;
   font-size: 1.2rem;
+  text-decoration: none;
+  color: #3d4857;
+}
+
+.recipesummary {
+  color: #8492a4;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.recipePageImage {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.recipePageSummary {
+  color: #8492a4;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  padding: 20;
+  max-width: 90ch;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.postSubtitles {
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  font-family: "Roboto", sans-serif;
+  color:#3d4857;
+  margin-left: 50;
+  margin-right: 50;
+  
+  
+}
+
+.ingredientsList {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  font-family: "Roboto", sans-serif;
+  color:#3d4857;
+  margin-left: 50;
+  margin-right: 50;
+  
+}
+
+.method {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Roboto", sans-serif;
+  color:#3d4857;
+  max-width: 90ch;
+  margin-left: 50;
+  margin-right: 50;
+  text-align: left;
 }
