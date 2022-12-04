@@ -26,3 +26,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+// responsive nav bar
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navBar = document.getElementsByClassName('navBar')[0]
+
+toggleButton.addEventListener('click', () => {
+  navBar.classList.toggle('active')
+})
