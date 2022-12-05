@@ -141,6 +141,11 @@ body {
   .navBar.active {
     display: flex;
   }
+
+  .subNav:hover .subNavContent {
+    display: flex;
+    flex-direction: column;
+  }
   }
 
 /* Recipe cards */
@@ -345,7 +350,7 @@ img {
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.dot.active, .dot:hover {
   background-color: #717171;
 }
 
