@@ -19,6 +19,11 @@ body {
   padding: 20;
 }
 
+.brand a {
+  text-decoration: none;
+  color: #a70040; 
+}
+
 /* The navigation menu */
 .navBar {
   overflow: hidden;
