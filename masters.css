@@ -293,9 +293,12 @@ img {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 750px;
+  max-width: 1000px;
   position: relative;
   margin: 0 auto;
+
+padding-left: 10px;
+padding-right: 10px;
 }
 
 /* Hide the images by default */
