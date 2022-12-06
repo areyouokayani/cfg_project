@@ -1,3 +1,13 @@
+// responsive nav bar
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navBar = document.getElementsByClassName('navBar')[0]
+
+toggleButton.addEventListener('click', () => {
+  navBar.classList.toggle('active')
+})
+
+// Slideshow
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -27,10 +37,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// responsive nav bar
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navBar = document.getElementsByClassName('navBar')[0]
-
-toggleButton.addEventListener('click', () => {
-  navBar.classList.toggle('active')
-})
